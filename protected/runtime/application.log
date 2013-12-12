@@ -5481,3 +5481,29 @@ Stack trace:
 REQUEST_URI=/Kensway/Site/Login
 HTTP_REFERER=http://localhost/Kensway/
 ---
+2013/12/12 15:17:58 [error] [exception.CException] exception 'CException' with message 'Property "CategoryController.CategoryTable" is not defined.' in F:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 F:\xampp\htdocs\Kensway\protected\controllers\CategoryController.php(242): CComponent->__get('CategoryTable')
+#1 F:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#2 F:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 F:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 F:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#6 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('category')
+#7 F:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 F:\xampp\htdocs\Kensway\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Kensway/category
+HTTP_REFERER=http://localhost/Kensway/user
+---
+2013/12/12 15:19:11 [error] [php] Undefined variable: paginationData (F:\xampp\htdocs\Kensway\protected\controllers\CategoryController.php:247)
+Stack trace:
+#0 F:\xampp\htdocs\yii\framework\web\CController.php(286): CategoryController->runAction()
+#1 F:\xampp\htdocs\yii\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#2 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CategoryController->run()
+#3 F:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 F:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 F:\xampp\htdocs\Kensway\index.php(13): CWebApplication->run()
+REQUEST_URI=/Kensway/category
+in F:\xampp\htdocs\Kensway\protected\controllers\CategoryController.php (247)
+in F:\xampp\htdocs\Kensway\index.php (13)

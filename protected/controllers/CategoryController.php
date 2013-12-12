@@ -21,7 +21,7 @@ class CategoryController extends GxController {
 	
 	public $tblAdministratorSearchString = null;
 	
-	/*protected function beforeAction($event)
+	protected function beforeAction($event)
 	{
 		if(Yii::app()->user->isGuest){
 			$this->redirect(Yii::app()->createUrl('Site/'));
@@ -29,12 +29,12 @@ class CategoryController extends GxController {
 		}
 		
 		$this->navigationSelectedIndex = Yii::app()->params['NAV_USER_MANAGER_INDEX'];
-		$this->headerTitle = 'User Manager';
-		$this->userTable = new UserTable();
+		$this->headerTitle = 'Category Manager';
+		$this->categoryTable = new CategoryTable();
 		return true;
 	}
-         * 
-         */
+         
+         
 
 	public function actionView() {
 		if (isset($_POST['objectId']) && isset($_POST['tblId'])){
