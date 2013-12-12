@@ -63,7 +63,7 @@ return array(
     			'connectionString' => 'mysql:host=localhost;dbname=kensway;port=3306;',
     			'emulatePrepare' => true,
     			'username' => 'root',
-    			'password' => 'trinhthanh1992',
+    			'password' => '',
     			'charset' => 'utf8',
     			'tablePrefix' => 'tbl_',
     	),
