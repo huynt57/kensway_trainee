@@ -15,7 +15,7 @@ class CategoryTable
 		$newCategory = new Category;
 		
 		$newCategory->setAttributes($data,true);
-		$newCategory->createddate = DateTimeHelper::date();
+		
 		
 		$result = array();
 		

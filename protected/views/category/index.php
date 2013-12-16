@@ -41,7 +41,7 @@ $this->widget('application.components.BreadCrumb', array(
  <?php $this->renderPartial('partial/jquery'); ?>
  
   <!-- Modal View -->
- <div id="adminsitrator-user-detail-modal" class="modal hide"></div>
+ <div id="adminsitrator-category-detail-modal" class="modal hide"></div>
  
  <!-- Modal View for create -->
 <?php $this->renderPartial('create');?>

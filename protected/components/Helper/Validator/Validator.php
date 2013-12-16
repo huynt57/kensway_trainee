@@ -45,4 +45,19 @@ class Validator{
 		}
 		return null;
 	}
+        
+        public static function validateCategoryname($value){
+		if ( preg_match('/\s/',$value)) {
+			return 'Category name cannot contain space';
+		}
+		
+		if(!$value){
+			return 'Category name cannot empty';
+		}
+		
+		if(strlen($value) < 5){
+			return 'Categoryname too short';
+		}
+		return null;
+	}
 }

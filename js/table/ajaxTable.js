@@ -217,6 +217,7 @@ function ajaxShowModalForObjectInTable(tableId, postPath,objectId){
 					var modalViewId = buttonDetail.attr("modal-view");
 					var modalView = $("#"+modalViewId);
 					if(modalView.length){
+                                            
 						modalView.html(data.modalData);
 						modalView.modal('show');
 					}

@@ -1,4 +1,4 @@
-<div id="adminsitrator-user-edit-modal" class="modal hide">
+<div id="adminsitrator-category-edit-modal" class="modal hide">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 		<h3 id="user-infos"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Change category information');?></h3>

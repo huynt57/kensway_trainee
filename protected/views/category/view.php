@@ -1,6 +1,6 @@
 <div class="modal-header">
 	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	<h3 id="user-infos"><?php echo $administrator->username; ?></h3>
+	<h3 id="user-infos"><?php echo $administrator->name; ?></h3>
 </div>
 <div class="modal-body">
 	<div class="row-fluid">
@@ -13,10 +13,7 @@
 				<dd><?php echo $administrator->name; ?></dd>
 				<dt><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Order');?></dt>
 				<dd><?php echo StringHelper::spaceIfNullString($administrator->order); ?></dd>
-				<dt><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Join Date');?></dt>
-				<dd>
-					<?php echo DateTimeHelper::dateOnlyFromDateTimeString($administrator->createddate)  ?>
-				</dd>
+				
 			</dl>
 		</div>
 	</div>

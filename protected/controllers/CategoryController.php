@@ -28,7 +28,7 @@ class CategoryController extends GxController {
 			return;
 		}
 		
-		$this->navigationSelectedIndex = Yii::app()->params['NAV_USER_MANAGER_INDEX'];
+		$this->navigationSelectedIndex = Yii::app()->params['NAV_CATEGORY_MANAGER_INDEX'];
 		$this->headerTitle = 'Category Manager';
 		$this->categoryTable = new CategoryTable();
 		return true;
@@ -122,7 +122,7 @@ class CategoryController extends GxController {
 		if (isset($_POST['objectId']) && isset($_POST['tblId'])){
 			$objectId = Yii::app()->request->getPost('objectId', '');
 			
-			$category = $this->categoryTable->userWithId($objectId);
+			$category = $this->categoryTable->categoryWithId($objectId);
 			
 			if($category){
 				$result = CJSON::encode ( array (
