@@ -67,7 +67,7 @@ $this->widget('application.components.BreadCrumb', array(
 					<thead>
 						<tr>
 							<th class="sorting sortable" id="name"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Name');?></th>
-							<th class="sorting sortable" id=company><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Order');?></th>
+							<th class="sorting sortable" id="order"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Order');?></th>
 							<th class="hidden-350 sorting sortable" id="active"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Status');?></th>
 							<th class="hidden-480 sorting"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Setting');?></th>
 						</tr>

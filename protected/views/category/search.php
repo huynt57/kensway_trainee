@@ -20,14 +20,14 @@
 						<form action="javascript:void(0);" method="POST" class='form-horizontal form-bordered form-validate' id="administrator_search_form">
 							<div class="control-group">
 								<label for="emailfield" class="control-label">
-									<?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'By Categoryname');?>
+									<?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'By Name');?>
 								</label>
 								<div class="controls">
 									<div class="span1 check-box-enable-search-field">
-										<input type="checkbox" class='icheck-me field-enabler' target="search_categoryname" checked="checked" data-skin="square" data-color="blue">
+										<input type="checkbox" class='icheck-me field-enabler' target="search_name" checked="checked" data-skin="square" data-color="blue">
 									</div>
 									<div class="span11">
-										<input type="text" class="span10" name="search_categoryname" id="search_username" class="input-xlarge">
+										<input type="text" class="span10" name="search_name" id="search_name" class="input-xlarge">
 									</div>
 								</div>
 							</div>
@@ -41,7 +41,7 @@
 										<input type="checkbox" class='icheck-me field-enabler' target="search_order" data-skin="square" data-color="blue">
 									</div>
 									<div class="span11">
-										<input type="text" class="span10" name="search_order" id="search_name" disabled class="input-xlarge">
+										<input type="text" class="span10" name="search_order" id="search_order" disabled class="input-xlarge">
 									</div>
 								</div>
 							</div>
@@ -61,19 +61,6 @@
 										</select>
 									</div>
 									
-								</div>
-							</div>
-							<div class="control-group">
-								<label for="emailfield" class="control-label">
-									<?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'By join date');?>
-								</label>
-								<div class="controls">
-									<div class="span1 check-box-enable-search-field">
-										<input type="checkbox" class='icheck-me field-enabler' target="search_date_range" data-skin="square" data-color="blue">
-									</div>
-									<div class="span11">
-										<input type="text" name="search_date_range" disabled="disabled" id="search_date_range" class="input-large daterangepick">
-									</div>
 								</div>
 							</div>
 							<div class="form-actions">

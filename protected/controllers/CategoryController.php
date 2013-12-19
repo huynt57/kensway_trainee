@@ -322,6 +322,13 @@ class CategoryController extends GxController {
 					$searchData[] = $nameData;
                                 }
 				
+                                if(!empty($obj->{'search_order'})){
+					$orderData = array();
+					$orderData[Yii::app()->params['SEARCH_FORM_AJAX_ELEMENT_TYPE']] = Yii::app()->params['SEARCH_INPUT_TYPE_NUMBER'];
+					$orderData[Yii::app()->params['SEARCH_FORM_AJAX_ELEMENT_VALUE']] = $obj->{'search_order'};
+					$orderData[Yii::app()->params['SEARCH_FORM_AJAX_ELEMENT_MODEL_NAME']] = '`'.'order'.'`';
+					$searchData[] = $orderData;
+                                }
 	
 				if(!empty($obj->{'search_status'})){
 					$statusData = array();

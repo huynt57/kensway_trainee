@@ -83,10 +83,10 @@ class CategoryTable
 		}
        	
        	if(!$isASC){
-       		$criteria->order = $sortField . ' DESC';
+       		$criteria->order = '`'.$sortField.'`' . ' DESC';
        	}
        	else{
-       		$criteria->order = $sortField;
+       		$criteria->order = '`'.$sortField.'`';
        	}
        	if($searchString){
        		foreach ($searchString as $searchData) {
@@ -97,6 +97,11 @@ class CategoryTable
        				case Yii::app()->params['SEARCH_INPUT_TYPE_TEXT']:
        					{
        						$criteria->addCondition("$searchModel LIKE '%".$searchValue."%'",'AND');
+       					}
+       					break;
+                                case Yii::app()->params['SEARCH_INPUT_TYPE_NUMBER']:
+       					{
+       						$criteria->addCondition("$searchModel = $searchValue");
        					}
        					break;
        				case Yii::app()->params['SEARCH_INPUT_TYPE_BOOL']:

@@ -2,7 +2,6 @@
 <tr>
 	<td><?php echo $administrator->name ?></td>
 	<td><?php echo $administrator->order ?></td>
-	<td><?php echo $administrator->active ?></td>
 	<td class="hidden-350">
 	<?php if ($administrator->active) { ?>
 		<span class="label label-satgreen"><?php echo Yii::t(Yii::app()->params['TRANSLATE_FILE'],'Active');?></span>
